@@ -1,4 +1,4 @@
-﻿#include <string>
+#include <string>
 #include <iostream>
 using namespace std;
 
@@ -8,7 +8,6 @@ public:
 
 	int pointVal(string param0){
 		int i = 0, j = 0, k = 0, t = 0, ac = 0;
-		//param0[i-1????]
 		//param0[0]is unknow,but it's not 0 still,alright u can check cout<<param0[-1]<<endl;
 		for (; param0[i-1] != '\0'; i++){
 			//string end with '\0'
@@ -34,7 +33,7 @@ public:
 					//for debut:cout<<param0[i]<<endl;
 				}
 		}
-		//cout<<"j is\t"<<j<<"\n"<<"ac is\t"<<ac<<endl;
+		//cout<<"j ist"<<j<<"n"<<"ac ist"<<ac<<endl;
 		if (j == 0)
 			return (250);
 		if (ac / j <= 3)
@@ -45,11 +44,12 @@ public:
 	}
 };
 
+//for test only
 int main(){
 	HowEasy how;
 	string input;
-	cout<<"input now\n";
-	getline(cin,input,'\n');
+	cout<<"input nown";
+	getline(cin,input,'n');
 	cout<<how.pointVal(input)<<endl;
 	return 0;
 }
